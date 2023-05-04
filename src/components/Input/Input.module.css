@@ -1,0 +1,20 @@
+.input {
+    background: #fff;
+    color: #514c83;
+    line-height: 35px;
+    outline: none;
+    text-align: center;
+    font-size: 16px;
+    border: hidden;
+    font-weight: 700;
+    border-radius: 7px;
+    margin: 0 auto;
+    width: 300px;
+    margin: 10px;
+    border: 2px solid #c6c4e3;
+    font-family: 'Outfit', sans-serif;
+}
+
+.input::placeholder {
+    opacity: 1;
+}
