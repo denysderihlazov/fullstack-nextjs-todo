@@ -3,6 +3,7 @@ import { AddBlogFormProps } from "./AddBlogForm.props";
 import { useForm } from "react-hook-form";
 import { Input } from "../Input/Input"
 import { P } from "../P/P"
+import { Button } from "../Button/Button";
 
 export const AddBlogForm = ({ className, ...props }: AddBlogFormProps): JSX.Element => {
     const { handleSubmit } = useForm<IAddBlogForm>();
@@ -10,9 +11,10 @@ export const AddBlogForm = ({ className, ...props }: AddBlogFormProps): JSX.Elem
     return (
         <form>
             <P>Title</P>
-            <Input />
+            <Input placeholder="Input your title" />
             <P>Description</P>
-            <Input />
+            <Input placeholder="Input your description" />
+            <Button appearance="primary">Submit</Button>
         </form>
     )
 }
